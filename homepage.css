@@ -52,7 +52,7 @@ aside p, aside h3 {
 }
 article {
     width: 80%;
-    height: flex;
+    display: flex;
     flex-wrap: wrap;    
 }
 .project {
