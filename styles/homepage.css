@@ -86,22 +86,22 @@ article {
 
 /* individual project background images */
 #history {
-    background-image: url(images/2-sputnik-1957.jpg);
+    background-image: url(../images/2-sputnik-1957.jpg);
 }
 #theatre {
-    background-image: url(images/history-hero-bg.jpg);
+    background-image: url(../images/history-hero-bg.jpg);
 }
 #stew {
-    background-image: url(images/hero.jpg);
+    background-image: url(../images/hero.jpg);
 }
 #cascade {
-    background-image: url(images/page3.jpg);
+    background-image: url(../images/page3.jpg);
 }
 #images {
-    background-image: url(../images/);
+    background-image: url(../images/pr01.jpg);
 }
 #fluid {
-    background-image: url(images/fluid08.jpg);
+    background-image: url(../images/fluid08.jpg);
 }
 #disco {
     background-image: url(../images/);
