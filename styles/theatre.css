@@ -1,0 +1,22 @@
+header {
+    background-color: rgb(121, 248, 239);
+}
+
+nav {
+    background-color: rgb(160, 185, 248);
+}
+
+main{
+    background-color: rgb(121, 202, 248);
+}
+
+ul {
+    background-color: rgb(165, 203, 238);
+}
+li {
+    color: rgb(19, 3, 33);
+}
+
+footer {
+    color:rgb(50, 93, 93);
+}
