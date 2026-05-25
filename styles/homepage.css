@@ -102,6 +102,7 @@ article {
 }
 #fluid {
     background-image: url(../images/fluid08.jpg);
+    margin:auto;
 }
 #queries {
     background-image: url(../images/queries.jpg);
