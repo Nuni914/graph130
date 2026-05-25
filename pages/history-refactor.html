@@ -7,9 +7,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Birthstone&family=Felipa&family=Italianno&family=Marck+Script&family=MonteCarlo&family=Moon+Dance&family=Petit+Formal+Script&family=Quintessential&family=Romanesco&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
+	<div id="nav-placeholder"></div>
+   <script>
+         fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        });
+	</script>
 	<section class="hero">
 		<h1>A Brief History of the Internet</h1>
 	</section>
