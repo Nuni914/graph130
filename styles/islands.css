@@ -21,7 +21,7 @@ main, header, nav ul, footer {
 main section {
     border: solid white 1px;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
 /* the following classes will govern the sections and make them work within the grid */
@@ -99,6 +99,8 @@ nav ul li:hover {
 main section {
     height: 400px;
 }
+
+/* teh following classes will create unique background images */
 .item1 {
     background-image: url(../images/sj-026.jpg);
 }
@@ -116,7 +118,7 @@ main section {
 }
 
 footer {
-    padding: 5px;
+    padding: 1rem;
     background-color: var(--dark-red);
     color:antiquewhite;
 }
