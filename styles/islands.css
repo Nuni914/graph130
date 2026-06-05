@@ -1,0 +1,109 @@
+:root {
+    --dark-red:rgb(48, 17, 4);
+    --white: #ffffff;
+    font-family: "Rye", serif;
+}
+body, header, main, footer, section, article, aside {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main, header, nav ul, footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: tan;
+}
+
+main section {
+    border: solid white 1px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* the following classes will govern the sections and make them work within the grid */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.pic6, .pic4, .pic2 {
+    background-image: url(../images/sj-051.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.pic2 {
+    background-image: url(../images/sj-009.jpg);
+}
+.pic4 {
+    background-image: url(../images/sj-011.jpg);
+}
+.item7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item8, .item9, .hero-orcas {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* styling elements */
+
+header {
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-align: center;
+}
+header a, header p, nav a {
+    color:antiquewhite;
+    text-decoration: none;
+}
+.hero-orcas, main section {
+    background-image: url(../images/sj-034.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(9, 67, 138, 0.5);
+}
+nav ul {
+    background-color: var(--white);
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    height: 100px;
+    color: var(--dark-red);
+}
+nav ul li:hover {
+    background-color:antiquewhite;
+    color: darkslategrey;
+}
+main section {
+    height: 400px;
+}
+.item1 {
+    background-image: url(../images/sj-026.jpg);
+}
+.item3 {
+    background-image: url(../images/sj-024.jpg);
+}
+.item5 {
+    background-image: url(../images/sj-035.jpg);
+}
+.item7 {
+    background-image: url(../images/sj-022.jpg);
+}
+.item2, .item4, .item6 {
+    background-image: none;
+}
