@@ -3,11 +3,19 @@ header {
 }
 
 nav {
-    background-color: rgb(160, 185, 248);
+    background-color: rgb(160, 236, 248);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
     background-color: rgb(121, 202, 248);
+    color: rgb(45, 15, 66);
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 10px;
 }
 
 ul {
@@ -20,4 +28,83 @@ li {
 
 footer {
     color:rgb(50, 93, 93);
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-image: url(../images/forest.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    font-family: "Roboto", sans-serif;
+    color: rgb(119, 215, 239)
+}
+
+nav p {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header img {
+    display: block;
+    margin: auto;
+}
+
+article{
+    width: 60%;
+    padding: 10px;
+}
+
+article p {
+    border-bottom: solid 1px white;
+    padding-bottom: 10px;
+}
+
+main ul {
+    width: 40%;
+    padding: 10px;
+    align-self: flex-end;
+}
+
+main ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: solid white 1px;
+    text-align: center;
+}
+
+nav p:hover,
+main ul li:hover {
+    background-color: white;
+    color: slategray;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgb(19, 3, 33);
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgb(19, 3, 33);
+    text-align: center;
+}
+p {
+    line-height: 2em;
+    padding: 10px;
+}
+nav p,
+footer a {
+    color: darkgoldenrod;
 }
