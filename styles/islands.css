@@ -1,7 +1,9 @@
 :root {
     --dark-red:rgb(48, 17, 4);
+    --tan: rgb(210, 180, 140);
     --white: #ffffff;
     font-family: "Rye", serif;
+    color:seagreen
 }
 body, header, main, footer, section, article, aside {
     margin: 0px;
@@ -13,7 +15,7 @@ body, header, main, footer, section, article, aside {
 main, header, nav ul, footer {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: tan;
+    /*background-color: tan;*/
 }
 
 main section {
@@ -23,7 +25,7 @@ main section {
 }
 
 /* the following classes will govern the sections and make them work within the grid */
-.item1 {
+.item1, .item8 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -48,7 +50,7 @@ main section {
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.item8, .item9, .hero-orcas {
+.item9, .hero-orcas {
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -57,10 +59,14 @@ main section {
 
 header {
     background-color: var(--dark-red);
-    color: var(--white);
     text-align: center;
 }
-header a, header p, nav a {
+.logo1 {
+    height: 100px;
+    width: auto;
+    margin: 10px auto;
+}
+header a, header p, nav a, label {
     color:antiquewhite;
     text-decoration: none;
 }
@@ -83,7 +89,8 @@ nav ul li {
     list-style-type: none;
     text-align: center;
     height: 100px;
-    color: var(--dark-red);
+    color: rgb(48, 17, 4);
+
 }
 nav ul li:hover {
     background-color:antiquewhite;
@@ -106,4 +113,10 @@ main section {
 }
 .item2, .item4, .item6 {
     background-image: none;
+}
+
+footer {
+    padding: 5px;
+    background-color: var(--dark-red);
+    color:antiquewhite;
 }
