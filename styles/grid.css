@@ -1,0 +1,74 @@
+body, header, main, footer, section, article, aside, main section, h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Viner Hand ITC', regular
+}
+
+main, body {
+    background-color: lavender;
+}
+
+header, .hero {
+    background-image: url(../images/pretties32.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 155px;
+    text-align: center;
+    padding-inline: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-inline: 10px;
+    padding-top: 10px;
+}
+
+main section {
+    display: grid;
+    /* Creates a 3-column grid layout */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    font-display: block;
+}
+
+.pure-u-1-4 {
+    padding-inline: 50px;
+    padding-bottom: 30px;
+}
+
+.pure-u-1-3 {
+    padding-top: 10px;
+}
+
+.item1 {
+    margin-inline-start: 45px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+}
+
+.item2 {
+    text-align: center;
+}
+
+.item3 {
+    text-align: end;
+    margin-inline-end: 45px;
+    padding-inline-end: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: lightblue;
+    height: 45px;
+}
