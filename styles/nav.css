@@ -12,6 +12,7 @@
 .romeo li {
     list-style: none;
     margin: 0 10px;
+    padding-bottom: 5px;
 }
 
 .romeo a {
