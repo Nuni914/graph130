@@ -1,9 +1,21 @@
+/*Tablets & iPads layout: 481px-768px*/
+
+@media screen and (max-width: 768px) {
+    /* Your original Desktop Grid Layout */
+    .container {
+    grid-template-columns: 1fr; /* Changes to 1 column */
+    gap: 10px; /* Smaller gap for mobile screens */
+    padding: 10px;
+  }
+}
+
 body, header, main, footer, section, article, aside, main section, h1 {
     margin: 0px;
     padding: 0px;
+    width: auto;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Viner Hand ITC', regular
+    font-family: 'Viner Hand ITC', regular;
 }
 
 main, body {
@@ -18,75 +30,73 @@ main section {
     font-display: block;
 }
 
-/*header*/
-header, .hero {
+header {
     background-image: url(../images/pretties32.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: auto;
+    box-sizing: content-box;
     text-align: center;
-    padding-bottom: 1em;
-}
-
-/*paragraph after title*/
-.top {
-    padding-inline: 3em;
+    height: auto;
 }
 
 /*title*/
 h1 {
     text-align: center;
-    font-size: 40px;
-    padding-top: 2.5em;
+    font-size: 28px;
+    padding-inline: 10px;
+    padding-top: 1em;
 }
 
-/*paragraph title*/
+/*paragraph after title*/
+.top {
+    font-size: 18px;
+}
 
 /*poem titles*/
 .title1, .title2, .title3 {
-    padding-top: 1em;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*authors*/
 .author1, .author2, .author3 {
-    font-size: 16px;
+    font-size: 12px;
 }
-
 
 /*all poems*/
 p {
     font-size: 18px;
 }
-
 .pure-u-1-3 {
     padding-top: 10px;
 }
 
 /*left poem*/
 .item1 {
-    margin-inline-start: 45px;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
+    margin-inline: auto;
 }
 
 /*middle poem*/
 .item2 {
     text-align: center;
+    margin-inline: auto;
+
 }
 
 /*right poem*/
 .item3 {
     text-align: end;
-    margin-inline-end: 45px;
     padding-inline-end: 50px;
+    padding-left: 10px;
+    margin-inline: auto;
+
 }
 
 /*pictures*/
 .pure-u-1-4 {
-    padding-inline: 50px;
-    padding-bottom: 30px;
+    padding-inline: 40px;
 }
 
 /*bottom of page*/
@@ -95,10 +105,7 @@ footer {
     grid-column-end: 4;
     text-align: center;
     background-color: lightblue;
-    height: 35px;
-}
-
-.footer {
-    font-size: 15px;
-    padding-top: 3px;
+    height: 45px;
+    padding-bottom: 2px;
+    font-size: 12px;
 }
