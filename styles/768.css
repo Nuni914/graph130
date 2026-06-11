@@ -1,12 +1,21 @@
 /*Tablets & iPads layout: 481px-768px*/
 
 @media screen and (max-width: 768px) {
-    /* Your original Desktop Grid Layout */
-    .container {
-    grid-template-columns: 1fr; /* Changes to 1 column */
-    gap: 10px; /* Smaller gap for mobile screens */
-    padding: 10px;
+  .image-container {
+    display: flex;             /* Aligns images in a horizontal row */
+    flex-direction: row;       /* Forces horizontal alignment */
+    flex-wrap: nowrap;         /* Prevents images from wrapping to a new line */
+    justify-content: space-between; /* Spaces them evenly across the screen */
+    gap: 30px;                 /* Adds a small gap between the pictures */
+    width: auto;               /* Ensures the container uses full width */
   }
+}
+
+  .image-container img {
+    width: 30%;                /* Allows 3 images to fit perfectly with the gap */
+    height: auto;              /* Maintains the original aspect ratio */
+    object-fit: cover; 
+    padding-inline: 15px;        /* Keeps images from stretching or distorting */
 }
 
 body, header, main, footer, section, article, aside, main section, h1 {
@@ -95,9 +104,7 @@ p {
 }
 
 /*pictures*/
-.pure-u-1-4 {
-    padding-inline: 40px;
-}
+
 
 /*bottom of page*/
 footer {

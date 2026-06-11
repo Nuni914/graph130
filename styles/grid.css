@@ -84,9 +84,14 @@ p {
 }
 
 /*pictures*/
-.pure-u-1-4 {
-    padding-inline: 50px;
+.image-container {
+    padding-inline: 30px;
     padding-bottom: 30px;
+    margin-inline: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
 }
 
 /*bottom of page*/

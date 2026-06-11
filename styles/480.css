@@ -3,7 +3,7 @@
 @media screen and (max-width: 480px) {
 /*triggers when the screen is 480px or smaller*/
   .grid-container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr; /*changes grid to 1 single column*/
   }
 }
@@ -19,14 +19,6 @@ body, header, main, footer, section, article, aside, main section, h1 {
 
 main, body {
     background-color: lavender;
-}
-
-main section {
-    display: grid;
-    /* Creates a 3-column grid layout */
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    font-display: block;
 }
 
 header {
@@ -89,8 +81,22 @@ p {
 }
 
 /*pictures*/
-.pure-u-1-4 {
-    padding-inline: 20px;
+/* Container forces horizontal alignment and prevents wrapping */
+.image-container {
+  display: flex;
+  flex-direction: row;       /* Keeps items in a row */
+  flex-wrap: nowrap;         /* FORCES items to stay on one line */
+  justify-content: space-between;      /* Distributes space or use 'gap' */
+  gap: 8px;                  /* Optional: adds small spacing between images */
+  width: auto;
+}
+
+/* Images shrink proportionally to fit the 480px container */
+.image-container img {
+  width: 27%;
+  height: auto;              /* Maintains the original aspect ratio */
+  object-fit: cover;         /* Optional: clips image if aspect ratios differ */
+  padding-inline: 15px;
 }
 
 /*bottom of page*/
