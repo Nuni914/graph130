@@ -25,18 +25,18 @@ body {
     padding-bottom: .6em;
 }
 
-nav li {
+.bogus li {
     display: inline-block;
 }
 
-nav a, nav a:link, nav a:visited {
+.bogus a, .bogus a:link, .bogus a:visited {
     padding: .8em;
     display: inline;
     width: 100%;
     border: 1px solid #44a5b5;
 }
 
-nav ul {
+.bogus ul {
     padding: 1.1em;
     margin-top: .7em;
 }

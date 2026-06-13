@@ -28,18 +28,18 @@ header h2 {
 	font-size: 20px;
 }
 
-nav ul {
+.page ul {
 	text-align: center;
 	list-style: none;
 	background-color: #44a5b5;
 	margin-bottom: 15px;
 }
 
-nav li {
+.page li {
 	display: inline-block;
 }
 
-nav a {
+.page a {
 	padding: 9px;
 	display: block;
 	width: 100px;

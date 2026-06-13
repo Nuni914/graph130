@@ -82,16 +82,16 @@ h1 {
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(9, 67, 138, 0.5);
 }
-nav ul {
+.bogus ul {
     height: 2.5em;
 }
-nav ul li {
+.bogus ul li {
     list-style-type: none;
     text-align: center;
     height: 100px;
     color: rgb(48, 17, 4);
 }
-nav ul li:hover {
+.bogus ul li:hover {
     background-color:antiquewhite;
     color: darkslategrey;
 }

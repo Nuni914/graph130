@@ -30,18 +30,18 @@ header {
     float: none;
 }
 
-nav ul {
+.bogus ul {
     text-align: center;
     list-style: none;
     margin-bottom: 1em;
     padding: 0px;
 }
 
-nav li {
+.bogus li {
     display: block;
 }
 
-nav a, nav a:link, nav a:visited {
+.bogus a, .bogus a:link, .bogus a:visited {
     margin: auto;
     padding: .7em;
     display: block;
@@ -49,7 +49,7 @@ nav a, nav a:link, nav a:visited {
     text-decoration: none;
 }
 
-nav a:hover {
+.bogus a:hover {
     background-color: #344e5f;
     color: white;
 }
