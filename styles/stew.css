@@ -1,13 +1,16 @@
 body {
 	background-color:#285680;
+	font-family: American Typewriter ITC Pro, condensed, sans-serif;
 }
 
 
 .stew-content {
 	background-color:#cccccc;
-	width:700px;
-	padding:10px;
-	margin:auto;
+	width:800px;
+	padding-inline:30px;
+	margin-inline:auto;
+	padding-top: 1em;
+	
 }
 
 h1,h2,h3 {
@@ -17,8 +20,15 @@ h1,h2,h3 {
 footer {
 	background-color:#4E6880;
 	color:white;
-	padding-top:7px;
-	padding-bottom:5px;
+	padding-top: 1px;
+	padding-bottom: 5px;
 	clear:both;
-	padding-left:10px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	height: 30px;
+}
+
+.bottom {
+	padding-bottom: 1.5em;
 }

@@ -1,39 +1,3 @@
-header {
-    background-color: rgb(121, 248, 239);
-}
-
-nav {
-    background-color: rgb(160, 236, 248);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main {
-    background-color: rgb(121, 202, 248);
-    color: rgb(45, 15, 66);
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    margin: 30px auto;
-    padding: 10px;
-}
-
-ul {
-    background-color: rgb(165, 203, 238);
-}
-
-li {
-    color: rgb(19, 3, 33);
-}
-
-footer {
-    color:rgb(50, 93, 93);
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    margin: 30px auto;
-}
-
 body {
     margin: 0px;
     padding: 0px;
@@ -47,18 +11,44 @@ body {
     color: rgb(119, 215, 239)
 }
 
+nav {
+    /* background-color: #fefdfd; */
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+}
+
 nav p {
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    color: black;
+    font-size: 16px;
+    padding-top: 1em;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
 }
 
 header img {
     display: block;
     margin: auto;
+    height: 7em;
+    width: auto;
+    padding-top: 1em;
 }
 
-article{
+main, footer {
+    color: rgb(245, 231, 255);
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 30px auto;
+    /* padding: 10px; */
+}
+
+article {
     width: 60%;
     padding: 10px;
 }
@@ -68,13 +58,13 @@ article p {
     padding-bottom: 10px;
 }
 
-main ul {
-    width: 40%;
+.show-info {
+    width:40%;
     padding: 10px;
     align-self: flex-end;
 }
 
-main ul li {
+.show-info li {
     list-style: none;
     padding: 10px;
     margin: 10px;
@@ -83,28 +73,24 @@ main ul li {
 }
 
 nav p:hover,
-main ul li:hover {
+.show-info li:hover {
     background-color: white;
     color: slategray;
 }
 
 h1 {
     font-size: 3em;
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgb(19, 3, 33);
-    text-align: center;
 }
+
 h2 {
     font-size: 2em;
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgb(19, 3, 33);
-    text-align: center;
 }
+
 p {
     line-height: 2em;
-    padding: 10px;
+    /* padding: 10px; */
 }
-nav p,
+
 footer a {
-    color: darkgoldenrod;
+    color:rgb(115, 240, 240);
 }

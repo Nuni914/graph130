@@ -83,14 +83,13 @@ h1 {
     text-shadow: 2px 2px 4px rgba(9, 67, 138, 0.5);
 }
 nav ul {
-    background-color: var(--white);
+    height: 2.5em;
 }
 nav ul li {
     list-style-type: none;
     text-align: center;
     height: 100px;
     color: rgb(48, 17, 4);
-
 }
 nav ul li:hover {
     background-color:antiquewhite;

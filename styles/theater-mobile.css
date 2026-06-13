@@ -1,0 +1,13 @@
+@media screen and max (max-width:768px) {
+   main, footer {
+    display: block;
+   }
+
+   article, main ul {
+    width: 95%;
+   }
+
+   h2 {
+    font-size: 2.23m;
+   }
+}
