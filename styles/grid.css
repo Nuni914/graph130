@@ -14,7 +14,7 @@ main section {
     display: grid;
     /* Creates a 3-column grid layout */
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: flex-start;
     font-display: block;
 }
 
@@ -43,6 +43,11 @@ h1 {
 
 /*paragraph title*/
 
+/* Update the parent container */
+section.pure-g {
+  justify-content: flex-start !important;
+}
+
 /*poem titles*/
 .title1, .title2, .title3 {
     padding-top: 1em;
@@ -64,20 +69,37 @@ p {
     padding-top: 10px;
 }
 
+/* 1. Ensure all items include padding in their width calculation */
+.item1, .item2, .item3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* 2. Give them all the same internal spacing */
+.item1, .item2, .item3 {
+  padding-left: 10px;  /* Adjust this value to set the gap from the left */
+  padding-right: 10px;
+}
+
+
 /*left poem*/
-.item1 {
+/* .item1 {
+  box-sizing: border-box;
+  width: 100%; /* Now 100% includes the padding */
+
+/* .item1 {
     margin-inline-start: 45px;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
-}
+} */
 
-/*middle poem*/
+/* middle poem
 .item2 {
     text-align: center;
 }
 
 /*right poem*/
-.item3 {
+/* .item3 {
     text-align: end;
     margin-inline-end: 45px;
     padding-inline-end: 50px;

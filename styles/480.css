@@ -59,10 +59,14 @@ p {
 
 /*left poem*/
 .item1 {
+  box-sizing: border-box;
+  width: 100%; /* Now 100% includes the padding */
+}
+/* .item1 {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     margin-inline: auto;
-}
+} */
 
 /*middle poem*/
 .item2 {

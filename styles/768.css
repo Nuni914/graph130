@@ -35,7 +35,7 @@ main section {
     display: grid;
     /* Creates a 3-column grid layout */
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: flex-start;
     font-display: block;
 }
 
@@ -82,10 +82,14 @@ p {
 
 /*left poem*/
 .item1 {
+  box-sizing: border-box;
+  width: 100%; /* Now 100% includes the padding */
+}
+/* .item1 {
     padding-inline-start: 50px;
     padding-inline-end: 50px;
     margin-inline: auto;
-}
+} */
 
 /*middle poem*/
 .item2 {
